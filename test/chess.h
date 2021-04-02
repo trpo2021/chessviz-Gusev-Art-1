@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-enum Castling { //че такое?
+enum Castling {
     Without,
     Short,
     Long

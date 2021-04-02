@@ -17,4 +17,3 @@ test: main_test.c.o ctest.h mytest.c.o
 
 clean:
 	rm -f test *.o
-
