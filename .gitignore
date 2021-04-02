@@ -1,3 +1,7 @@
 #gitignore file
 *.o
 *.c~
+*.out
+*.html
+*.d
+*.a
