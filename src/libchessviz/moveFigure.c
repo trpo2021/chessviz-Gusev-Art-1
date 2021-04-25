@@ -230,6 +230,23 @@ static bool checkAbilityK(motion the_motion)
     return false;
 }
 
+bool moveP(motion the_motion, char chess[8][8])
+{
+    if (!checkAbilityP(the_motion, chess)
+        || !checkStartPosition(the_motion, chess)
+        || !(checkEndPosition(the_motion, chess)
+             || checkAbilityEP(the_motion, chess))) {
+        return false;
+    }
+
+    if (the_motion.flag_transformation == 1) {
+        makeTransformation(the_motion, chess);
+    } else
+        makeMove(the_motion, chess);
+
+    return true;
+}
+
 bool moveB(motion the_motion, char chess[8][8])
 {
     if (!checkAbilityB(the_motion, chess)
