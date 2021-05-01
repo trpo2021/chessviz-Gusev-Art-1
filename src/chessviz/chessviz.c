@@ -49,7 +49,7 @@ int main(int argc, char* argv[])
                 addChessHTML(file_html, chess, move_string);
                 printChess(chess);
             } else {
-                printf("Error switchMove White\n");
+                printf("Error _move\n");
                 return -1;
             }
 
