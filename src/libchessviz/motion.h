@@ -34,6 +34,12 @@ typedef struct {
 
 } motion;
 
+typedef struct {
+    motion white_motion;
+    motion black_motion;
+    char id_move[4];
+} match;
+
 //пробел - пустое поле
 //большие буквы белые, маленькие черные
 // p - пешка
